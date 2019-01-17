@@ -1,0 +1,19 @@
+version: '1'
+services:
+    frontend:
+        container_name: frontend
+        restart: always
+        build: ./frontend/
+        ports:
+            - "4200"
+    backend:
+        container_name: backend
+        restart: always
+        build: ./backend/
+        ports: 
+            - "3000"
+    mongo: 
+        image: mongo
+        container_name: "mongodb"
+        ports: 
+            - "27017:27017"
