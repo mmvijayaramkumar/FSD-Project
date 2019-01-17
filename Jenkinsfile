@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        PATH= "$PATH:/Program Files/Docker Toolbox"
+    }
+
     stages {
         stage('UI Frontend - Build') {
             steps {
