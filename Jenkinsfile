@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH= "$PATH:/Program Files/Docker Toolbox"
+        PATH= "$PATH:/usr/local/bin/docker-compose"
     }
 
     stages {
